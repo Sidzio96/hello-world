@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+ <meta charset="utf-8"/>
+ <title>Signup Page</title>
+ <meta name="description" content="Formularz do wypełnienia przez ludzi"/>
+ <meta name="keywords" content="formularz,ocena,wypełnienie"/>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+ <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+
+<body>
+ <div id="logo"> 
+  <p> Sign up to do</p>
+   <button id="przycisk" class="button" type="button">Log In</button>
+   <div style="clear:both;"></div>
+   <button id="przycisk2" class="button" type="button">Log Out</button>
+ </div>
+  <div class="header">
+    <h1>Create Account</h1>
+	<p>Example of form validation built by Jakub Sidor.</p>
+  
+ </div>
+ <form name="login" onsubmit="return logowanie()">
+    <div>
+        <input type="email" placeholder="Email Address" id="email" value=""><br></br>
+        <input type="text" placeholder="Company Name" id="name" value=""><br></br>
+        <input type="password" placeholder="Password" id="Password" value=""><br></br>
+        <input type="password" placeholder="Confirm Password" id="Confirm Password" value=""><br></br>
+        <input id="Choose Your Province"  placeholder="Choose Your Province" type="text" list="Province" value=""><br></br>
+		<datalist id="Province">
+     <option value="Dolnośląskie"></option>
+	 <option value="Kujawsko-Pomorskie"></option>
+	 <option value="Lubelskie"></option>
+	 <option value="Lubuskie"></option>
+	 <option value="Łódzkie"></option>
+	 <option value="Małopolskie"></option>
+	 <option value="Mazowieckie"></option>
+	 <option value="Opolskie"></option>
+	 <option value="Podkarpackie"></option>
+	 <option value="Podlaskie"></option>
+	 <option value="Pomorskie"></option>
+	 <option value="Śląskie"></option>
+	 <option value="Świętokrzyskie"></option>
+	 <option value="Warmińsko-Mazurskie"></option>
+	 <option value="Wielkopolskie"></option>
+	 <option value="Zachodniopomorskie"></option>
+    </datalist>
+    </div>
+    <div>
+        <button type="submit" value="Create Account">Create Account</button>
+    </div>
+  <script src="script.js"> </script>
+ </form>
+</body>
+</html>
